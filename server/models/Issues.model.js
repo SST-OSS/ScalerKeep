@@ -12,7 +12,7 @@ const UserSchema = new Schema({
   returned: { required: true, type: Boolean },
 });
 
-export const USER_MODEL_NAME = "Books";
+export const USER_MODEL_NAME = "Model";
 
 const UserModel = model(USER_MODEL_NAME, UserSchema);
 
