@@ -1,8 +1,13 @@
 import { Schema, model } from "mongoose";
 import { USER_MODEL_NAME } from "./Users.model.js";
+import { BOOKS_MODEL_NAME } from "./Books.model.js";
 
 const IssuesSchema = new Schema({
-  book_id: { type: String, required: true },
+  book_id: {
+    required: true,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: BOOKS_MODEL_NAME,
+  },
   user_id: {
     required: true,
     type: mongoose.Schema.Types.ObjectId,
