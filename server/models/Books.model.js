@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
 
 const UserSchema = new Schema({
-  book_id: { type: mongoose.Schema.Types.ObjectId , required:true },
+  book_id: { type: String , required:true },
   title: { required: true, type: String },
   added_on: { required: true, type: Date },
 });
