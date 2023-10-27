@@ -8,6 +8,6 @@ const BooksSchema = new Schema({
 
 export const BOOKS_MODEL_NAME = "Books";
 
-const BooksModel = model(USER_MODEL_NAME, BooksSchema);
+const BooksModel = model(BOOKS_MODEL_NAME, BooksSchema);
 
 export default BooksModel;
