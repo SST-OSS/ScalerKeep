@@ -1,11 +1,12 @@
 import { Schema, model } from "mongoose";
+import USER_MODEL_NAME from "./Users.model.js";
 
 const UserSchema = new Schema({
   book_id: { type: String, required: true },
   user_id: {
     required: true,
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Users",
+    ref: USER_MODEL_NAME,
   },
   deadline: { required: true, type: Date },
   returned: { required: true, type: Boolean },
