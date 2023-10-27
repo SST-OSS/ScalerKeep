@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
-import USER_MODEL_NAME from "./Users.model.js";
+import { USER_MODEL_NAME } from "./Users.model.js";
 
-const UserSchema = new Schema({
+const IssuesSchema = new Schema({
   book_id: { type: String, required: true },
   user_id: {
     required: true,
@@ -12,8 +12,8 @@ const UserSchema = new Schema({
   returned: { required: true, type: Boolean },
 });
 
-export const USER_MODEL_NAME = "Model";
+export const ISSUES_MODEL_NAME = "Model";
 
-const UserModel = model(USER_MODEL_NAME, UserSchema);
+const IssuesModel = model(ISSUES_MODEL_NAME, IssuesSchema);
 
-export default UserModel;
+export default IssuesModel;
