@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-import { USER_MODEL_NAME } from "./Users.model.js";
+import { USERS_MODEL_NAME } from "./Users.model.js";
 import { BOOKS_MODEL_NAME } from "./Books.model.js";
 
 const IssuesSchema = new Schema({
@@ -11,7 +11,7 @@ const IssuesSchema = new Schema({
   user_id: {
     required: true,
     type: mongoose.Schema.Types.ObjectId,
-    ref: USER_MODEL_NAME,
+    ref: USERS_MODEL_NAME,
   },
   deadline: { required: true, type: Date },
   returned: { required: true, type: Boolean },

@@ -5,8 +5,8 @@ const UserSchema = new Schema({
   name: { required: true, type: String },
 });
 
-export const USER_MODEL_NAME = "Users";
+export const USERS_MODEL_NAME = "Users";
 
-const UserModel = model(USER_MODEL_NAME, UserSchema);
+const UserModel = model(USERS_MODEL_NAME, UserSchema);
 
 export default UserModel;
