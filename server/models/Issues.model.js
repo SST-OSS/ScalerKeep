@@ -17,7 +17,7 @@ const IssuesSchema = new Schema({
   returned: { required: true, type: Boolean },
 });
 
-export const ISSUES_MODEL_NAME = "Model";
+export const ISSUES_MODEL_NAME = "Issues";
 
 const IssuesModel = model(ISSUES_MODEL_NAME, IssuesSchema);
 
